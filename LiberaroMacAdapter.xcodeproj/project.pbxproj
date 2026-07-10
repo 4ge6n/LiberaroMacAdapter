@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C627701E966C179764817E7 /* AuthTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902B8C894374A589B4F95496 /* AuthTokenStore.swift */; };
+		17B4C7BBAE4CBF926CCB8E5B /* HTTPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295162F3474BE857DFA9DD8B /* HTTPTypes.swift */; };
+		1A2607A43FA4C7181C0D55A6 /* LiberaroMacAdapterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7025DB0B09442409039813 /* LiberaroMacAdapterApp.swift */; };
+		1BB4C07596D0095A280B82ED /* irodori_batch_server.py in Resources */ = {isa = PBXBuildFile; fileRef = 2792D605588EE3ECF19938F0 /* irodori_batch_server.py */; };
+		23806B5C7F9DD117949391F1 /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFF56789E7734C27A17C93 /* ProcessRunner.swift */; };
+		2D6C3986BFAE2C05B4D7666D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E38B5C034F917C4CA26CFA /* Assets.xcassets */; };
+		2DF9618F88E206EC4BC376A5 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C300455A574588C1DDA951FC /* PairingView.swift */; };
+		38D6F95ECD10F913B2E4CE5D /* UpscaleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB566D8B82DDAF5C62AEE2DC /* UpscaleEngine.swift */; };
+		3B2031939B35BB5133228D42 /* PairingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548FFEBADBD2F34039C58370 /* PairingPayload.swift */; };
+		5F09632FAF2F496DE9B6042D /* NetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605E2743FDF47780F30D3B /* NetworkInfo.swift */; };
+		656460FC8AEDEA63383E0265 /* MultipartParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200DEE1154E1FCBE666791D8 /* MultipartParser.swift */; };
+		74863C24D43898E321D7B4A6 /* ImageProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64F3ADFAEC3847AD1E6E9C /* ImageProbe.swift */; };
+		74A1AFD662F08B9F41DD198D /* UpscaleHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092039BD68CBCE4F1CA973FE /* UpscaleHTTPService.swift */; };
+		82C52F9A9F0E0BAA3890C5F2 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC8CDEA813BD89622525F1 /* QRCodeGenerator.swift */; };
+		82D9A43D4B98444D7F2EB43C /* IrodoriPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28EBF9A38F4F753595B2BA8 /* IrodoriPanelView.swift */; };
+		957B823078B470578331B8B1 /* UpscaleJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B11AE2537A57A102242FA5 /* UpscaleJob.swift */; };
+		A9F6622943DD0157F58C1C48 /* IrodoriSupervisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11846DED900E9A9C76EA2843 /* IrodoriSupervisor.swift */; };
+		CFE7F2C2DA4B8B198C232563 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD326A5FD1EA7993D046B8 /* AppState.swift */; };
+		D43DAC61132AB9B8274CCF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DEC0DD6836776B50CA15C1 /* AppDelegate.swift */; };
+		DD757365D7A972F08B48C0FF /* UpscalePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC520FC687544F4ECE67AB /* UpscalePanelView.swift */; };
+		E662DE241B9EBA0A9D807844 /* UpscaleJobStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B2F03EFA65C4891EEF8AAA /* UpscaleJobStore.swift */; };
+		E66B7CA6E8BD99FE9C60EDE8 /* MiniHTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C540161A6DA19CF89650C31D /* MiniHTTPServer.swift */; };
+		F0565ADCBC674625639D5C97 /* IrodoriHealthMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB36568536C64B505BCAB /* IrodoriHealthMonitor.swift */; };
+		FB1B4139170090DEB997A101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE85DDD3380FB1B7CABC1D /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		092039BD68CBCE4F1CA973FE /* UpscaleHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpscaleHTTPService.swift; sourceTree = "<group>"; };
+		11846DED900E9A9C76EA2843 /* IrodoriSupervisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrodoriSupervisor.swift; sourceTree = "<group>"; };
+		16E38B5C034F917C4CA26CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200DEE1154E1FCBE666791D8 /* MultipartParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartParser.swift; sourceTree = "<group>"; };
+		2792D605588EE3ECF19938F0 /* irodori_batch_server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = irodori_batch_server.py; sourceTree = "<group>"; };
+		27EFF56789E7734C27A17C93 /* ProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunner.swift; sourceTree = "<group>"; };
+		295162F3474BE857DFA9DD8B /* HTTPTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTypes.swift; sourceTree = "<group>"; };
+		3A605E2743FDF47780F30D3B /* NetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfo.swift; sourceTree = "<group>"; };
+		3D64F3ADFAEC3847AD1E6E9C /* ImageProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProbe.swift; sourceTree = "<group>"; };
+		47DEC0DD6836776B50CA15C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FCD326A5FD1EA7993D046B8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		548FFEBADBD2F34039C58370 /* PairingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingPayload.swift; sourceTree = "<group>"; };
+		56EE85DDD3380FB1B7CABC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65CC8CDEA813BD89622525F1 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		6F7025DB0B09442409039813 /* LiberaroMacAdapterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberaroMacAdapterApp.swift; sourceTree = "<group>"; };
+		70B2F03EFA65C4891EEF8AAA /* UpscaleJobStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpscaleJobStore.swift; sourceTree = "<group>"; };
+		902B8C894374A589B4F95496 /* AuthTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenStore.swift; sourceTree = "<group>"; };
+		C300455A574588C1DDA951FC /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		C540161A6DA19CF89650C31D /* MiniHTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniHTTPServer.swift; sourceTree = "<group>"; };
+		C8B11AE2537A57A102242FA5 /* UpscaleJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpscaleJob.swift; sourceTree = "<group>"; };
+		CB566D8B82DDAF5C62AEE2DC /* UpscaleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpscaleEngine.swift; sourceTree = "<group>"; };
+		D28EBF9A38F4F753595B2BA8 /* IrodoriPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrodoriPanelView.swift; sourceTree = "<group>"; };
+		E0DFB36568536C64B505BCAB /* IrodoriHealthMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrodoriHealthMonitor.swift; sourceTree = "<group>"; };
+		E7BDD64961B271F366EBDE95 /* LiberaroMacAdapter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberaroMacAdapter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BC520FC687544F4ECE67AB /* UpscalePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpscalePanelView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B89927A092185244DA4C38D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2792D605588EE3ECF19938F0 /* irodori_batch_server.py */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1428760928EFE1757D51C2E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7BDD64961B271F366EBDE95 /* LiberaroMacAdapter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C0CC55F81E272E3EDF7F68B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				16E38B5C034F917C4CA26CFA /* Assets.xcassets */,
+				2EE527549999961DE89FC3BD /* App */,
+				BEC4A48A908C61AC27701DBC /* HTTPServer */,
+				A31FE6942DF149F00D38B9BB /* Irodori */,
+				8490CE909F586C4CA662E0BF /* Pairing */,
+				F75569F30CA3895E009526A1 /* UI */,
+				5C92AFEAAD68C995EBF333F3 /* Upscale */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		244DAB9514F406D3CF9D2080 = {
+			isa = PBXGroup;
+			children = (
+				0B89927A092185244DA4C38D /* Resources */,
+				1C0CC55F81E272E3EDF7F68B /* Sources */,
+				1428760928EFE1757D51C2E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EE527549999961DE89FC3BD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				47DEC0DD6836776B50CA15C1 /* AppDelegate.swift */,
+				4FCD326A5FD1EA7993D046B8 /* AppState.swift */,
+				902B8C894374A589B4F95496 /* AuthTokenStore.swift */,
+				6F7025DB0B09442409039813 /* LiberaroMacAdapterApp.swift */,
+				3A605E2743FDF47780F30D3B /* NetworkInfo.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5C92AFEAAD68C995EBF333F3 /* Upscale */ = {
+			isa = PBXGroup;
+			children = (
+				3D64F3ADFAEC3847AD1E6E9C /* ImageProbe.swift */,
+				27EFF56789E7734C27A17C93 /* ProcessRunner.swift */,
+				CB566D8B82DDAF5C62AEE2DC /* UpscaleEngine.swift */,
+				092039BD68CBCE4F1CA973FE /* UpscaleHTTPService.swift */,
+				C8B11AE2537A57A102242FA5 /* UpscaleJob.swift */,
+				70B2F03EFA65C4891EEF8AAA /* UpscaleJobStore.swift */,
+			);
+			path = Upscale;
+			sourceTree = "<group>";
+		};
+		8490CE909F586C4CA662E0BF /* Pairing */ = {
+			isa = PBXGroup;
+			children = (
+				548FFEBADBD2F34039C58370 /* PairingPayload.swift */,
+				65CC8CDEA813BD89622525F1 /* QRCodeGenerator.swift */,
+			);
+			path = Pairing;
+			sourceTree = "<group>";
+		};
+		A31FE6942DF149F00D38B9BB /* Irodori */ = {
+			isa = PBXGroup;
+			children = (
+				E0DFB36568536C64B505BCAB /* IrodoriHealthMonitor.swift */,
+				11846DED900E9A9C76EA2843 /* IrodoriSupervisor.swift */,
+			);
+			path = Irodori;
+			sourceTree = "<group>";
+		};
+		BEC4A48A908C61AC27701DBC /* HTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				295162F3474BE857DFA9DD8B /* HTTPTypes.swift */,
+				C540161A6DA19CF89650C31D /* MiniHTTPServer.swift */,
+				200DEE1154E1FCBE666791D8 /* MultipartParser.swift */,
+			);
+			path = HTTPServer;
+			sourceTree = "<group>";
+		};
+		F75569F30CA3895E009526A1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				56EE85DDD3380FB1B7CABC1D /* ContentView.swift */,
+				D28EBF9A38F4F753595B2BA8 /* IrodoriPanelView.swift */,
+				C300455A574588C1DDA951FC /* PairingView.swift */,
+				F6BC520FC687544F4ECE67AB /* UpscalePanelView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB7ABD5B6FFBD7B6DA0736DC /* LiberaroMacAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E901333BDB547E456B1AB0A /* Build configuration list for PBXNativeTarget "LiberaroMacAdapter" */;
+			buildPhases = (
+				428CCFB2DB9F6BE387FB76AF /* Sources */,
+				B78AB52E38F5417ACBC636FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiberaroMacAdapter;
+			packageProductDependencies = (
+			);
+			productName = LiberaroMacAdapter;
+			productReference = E7BDD64961B271F366EBDE95 /* LiberaroMacAdapter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29D0D2FBE7C8882902D8FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AB7ABD5B6FFBD7B6DA0736DC = {
+						DevelopmentTeam = FC3DBA48QG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEDC1735436EADFE74CD08F4 /* Build configuration list for PBXProject "LiberaroMacAdapter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 244DAB9514F406D3CF9D2080;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7ABD5B6FFBD7B6DA0736DC /* LiberaroMacAdapter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B78AB52E38F5417ACBC636FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6C3986BFAE2C05B4D7666D /* Assets.xcassets in Resources */,
+				1BB4C07596D0095A280B82ED /* irodori_batch_server.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428CCFB2DB9F6BE387FB76AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43DAC61132AB9B8274CCF53 /* AppDelegate.swift in Sources */,
+				CFE7F2C2DA4B8B198C232563 /* AppState.swift in Sources */,
+				0C627701E966C179764817E7 /* AuthTokenStore.swift in Sources */,
+				FB1B4139170090DEB997A101 /* ContentView.swift in Sources */,
+				17B4C7BBAE4CBF926CCB8E5B /* HTTPTypes.swift in Sources */,
+				74863C24D43898E321D7B4A6 /* ImageProbe.swift in Sources */,
+				F0565ADCBC674625639D5C97 /* IrodoriHealthMonitor.swift in Sources */,
+				82D9A43D4B98444D7F2EB43C /* IrodoriPanelView.swift in Sources */,
+				A9F6622943DD0157F58C1C48 /* IrodoriSupervisor.swift in Sources */,
+				1A2607A43FA4C7181C0D55A6 /* LiberaroMacAdapterApp.swift in Sources */,
+				E66B7CA6E8BD99FE9C60EDE8 /* MiniHTTPServer.swift in Sources */,
+				656460FC8AEDEA63383E0265 /* MultipartParser.swift in Sources */,
+				5F09632FAF2F496DE9B6042D /* NetworkInfo.swift in Sources */,
+				3B2031939B35BB5133228D42 /* PairingPayload.swift in Sources */,
+				2DF9618F88E206EC4BC376A5 /* PairingView.swift in Sources */,
+				23806B5C7F9DD117949391F1 /* ProcessRunner.swift in Sources */,
+				82C52F9A9F0E0BAA3890C5F2 /* QRCodeGenerator.swift in Sources */,
+				38D6F95ECD10F913B2E4CE5D /* UpscaleEngine.swift in Sources */,
+				74A1AFD662F08B9F41DD198D /* UpscaleHTTPService.swift in Sources */,
+				957B823078B470578331B8B1 /* UpscaleJob.swift in Sources */,
+				E662DE241B9EBA0A9D807844 /* UpscaleJobStore.swift in Sources */,
+				DD757365D7A972F08B48C0FF /* UpscalePanelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40D27D9E502FAA833DC59D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79DEA6DBB59BEC439A58C0C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FC3DBA48QG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "iOS アプリからのアップスケール/TTS ジョブを LAN 経由で受け取るために使用します。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4ge6n.LiberaroMacAdapter;
+				PRODUCT_NAME = LiberaroMacAdapter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C5BADF923B3BF1314E8C0800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C6CC5D51B5F9868BD9F82DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FC3DBA48QG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "iOS アプリからのアップスケール/TTS ジョブを LAN 経由で受け取るために使用します。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4ge6n.LiberaroMacAdapter;
+				PRODUCT_NAME = LiberaroMacAdapter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E901333BDB547E456B1AB0A /* Build configuration list for PBXNativeTarget "LiberaroMacAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DEA6DBB59BEC439A58C0C5 /* Debug */,
+				C6CC5D51B5F9868BD9F82DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AEDC1735436EADFE74CD08F4 /* Build configuration list for PBXProject "LiberaroMacAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D27D9E502FAA833DC59D07 /* Debug */,
+				C5BADF923B3BF1314E8C0800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F29D0D2FBE7C8882902D8FBD /* Project object */;
+}

@@ -1,0 +1,35 @@
+name: LiberaroMacAdapter
+options:
+  bundleIdPrefix: com.4ge6n
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+targets:
+  LiberaroMacAdapter:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+      - path: Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: LiberaroMacAdapter
+        PRODUCT_BUNDLE_IDENTIFIER: com.4ge6n.LiberaroMacAdapter
+        DEVELOPMENT_TEAM: FC3DBA48QG
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: "iOS アプリからのアップスケール/TTS ジョブを LAN 経由で受け取るために使用します。"
+        # このアプリは ~/.liberaro 配下の未署名バイナリ (ncnn-vulkan) と
+        # /usr/bin/python3 subprocess を直接起動する。App Sandbox はこの用途と
+        # 根本的に相性が悪いため、entitlements ファイルを持たせず無効のままにする
+        # （mac-sidecar の既存 .command/.py と同じ運用）。
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
