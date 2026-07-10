@@ -22,11 +22,14 @@
 ## QR ペアリング
 
 「ペアリング」タブに、LAN アドレス・両サービスのポート・認証トークンを
-JSON エンコードした QR コードを表示する。iOS 側でこれを読み取ると
-（読み取り機能は Liberaro-iOS 側に別途実装予定）、`macBackendLANURL` /
+JSON エンコードした QR コードを表示する。iOS 側 (`Liberaro-iOS/Features/Settings/MacPairingScanView.swift`,
+AVFoundation ベースのスキャナ) でこれを読み取ると、`macBackendLANURL` /
 `macBackendAuthToken` / `irodoriMacBatchURL` / `irodoriMacBatchToken` の
-4 つの設定値が自動入力される。ペイロード形式は
+4 つの設定値が一度のスキャンで自動入力される（読み取り導線は「実行先」設定と
+「TTS サーバー設定」の両方に用意）。ペイロード形式は
 [`Sources/Pairing/PairingPayload.swift`](Sources/Pairing/PairingPayload.swift) 参照。
+iOS 側の対応 struct と JSON round-trip の契約はスタンドアロンテストで検証済み
+（フィールド名・型を変える場合は両リポジトリを同時に更新すること）。
 
 ## 開発
 
@@ -46,4 +49,3 @@ App Sandbox は無効（ncnn-vulkan の未署名バイナリと `/usr/bin/python
 - HTTP サーバーは keep-alive 非対応（毎リクエスト `Connection: close`）。Python 版も
   実質同等の挙動なので互換性上の問題は無いが、大量ページの一括投入では TCP
   ハンドシェイクが都度発生する。
-- 現状 iOS 側に QR スキャナーはまだ無い（Mac 側の表示のみ実装済み）。
